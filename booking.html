@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trending.html">Trending Movies</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking">
+        <h2>Book Your Movie Ticket</h2>
+        <form id="bookingForm">
+            <label for="movie">Choose Movie:</label>
+            <select id="movie" required>
+                <option value="Viduthalai-2">Viduthalai-2</option>
+                <option value="Pushpa-2">Pushpa-2 </option>
+                <option value="Amaran">Amaran</option>
+                <option value="Sorgavaasal">Sorgavaasal</option>
+            </select>
+            
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+            
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" required>
+            
+            <label for="number">Select Time:</label>
+            <input type="number" id="number" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Movie Ticket Booking</p>
+    </footer>
+
+    <script src="booking.js"></script>
+    <style>
+        /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 200px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Booking Section */
+.booking, .profile, .login {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+    </style>
+</body>
+</html>

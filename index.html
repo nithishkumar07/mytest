@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trending.html">Trending Movies</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Movie Ticket Booking</h1>
+        <p>Book your favorite movies now!</p>
+        <button> <a href="trending.html" class="cta-button">Explore Now</a> </button>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Movies</h2>
+        <div class="movie-list">
+            <div class="movie-card">
+                <img src="images.jpeg" alt="Movie 1">
+                <h3>Viduthalai-2</h3>
+                <p>Political, Thriller</p>
+               <button> <a href="booking.html?movie=viduthalai-2" class="book-now">Book Now</a> </button>
+            </div>
+            <div class="movie-card">
+                <img src="amaran.jpeg" alt="Movie 2">
+                <h3>Amaran</h3>
+                <p>Biopic</p>
+                <button> <a href="booking.html?movie=amaran" class="book-now">Book Now</a> </button>
+            </div>
+            <div class="movie-card">
+                <img src="images (1).jpeg" alt="Movie 3">
+                <h3>Sorgavaasal</h3>
+                <p>Thriller, Mystery</p>
+                <button> <a href="booking.html?movie=sorgavaasal" class="book-now">Book Now</a> </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>What Our Users Say</h2>
+        <div class="review">
+          <p>"A seamless and easy way to book tickets. Loved the experience!"</p>
+            <strong>- Sarah K.</strong>
+        </div>
+        <div class="review">
+            <p>"Great selection of movies, and the booking process was quick and efficient."</p>
+            <strong>- David M.</strong>
+        </div>
+    </section> 
+    <section class="cta">
+        <h2>Ready to Watch?</h2>
+        <p>Don't miss out on the latest movie releases. Book your tickets now!</p>
+       <button> <a href="booking.html" class="cta-button">Book Your Tickets</a> </button>
+    </section>
+</body>
+</html>
+
+
+    <style>
+        /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: ;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 200px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Booking Section */
+.booking, .profile, .login {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.review {
+     text-align: center;
+}
+.cta {
+    text-align: center;
+}
+    </style>
+</body>
+</html>
